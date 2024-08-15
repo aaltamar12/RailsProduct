@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: Vivelavida16
+  host: localhost
+
+development:
+  <<: *default
+  database: productos_api_development
+
+test:
+  <<: *default
+  database: productos_api_test
+
+production:
+  <<: *default
+  database: productos_api_production
+  username: productos_api
+  password: <%= ENV['PRODUCTOS_API_DATABASE_PASSWORD'] %>z 
