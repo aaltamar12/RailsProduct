@@ -64,28 +64,29 @@ Asegúrate de tener un archivo \`config/database.yml\` configurado. Aquí hay un
 
    Luego crea y migra la base de datos:
 
-	rails db:create
-	rails db:migrate
-
+```ruby
+rails db:create
+rails db:migrate
+```
 
 **4. Configurar Variables de Entorno**
 
    Asegúrate de tener el archivo \`config/credentials.yml.enc\` configurado. Si no tienes el \`master.key\`, necesitarás el archivo \`credentials.yml.enc\` para ejecutar la aplicación. Puedes crear un archivo \`credentials.yml.enc\` si no existe, utilizando:
 
-   ```ruby
+```ruby
 EDITOR="code --wait" rails credentials:edit
 ```
 
    Luego agrega tus credenciales.
 
-5. **Ejecutar el Servidor**
+**5. Ejecutar el Servidor**
 
    Inicia el servidor Rails:
-    ```ruby
-    rails s -p 3001
-    ```
+```ruby
+rails s -p 3001
+```
 
-   El servidor se ejecutará en http://localhost:3001\.
+   El servidor se ejecutará en \`http://localhost:3001\`.
 
 ## Uso
 
@@ -109,5 +110,5 @@ Una vez que el servidor está en funcionamiento, puedes acceder a la aplicación
 Para ejecutar las pruebas, usa:
 
 ```ruby
-rails test
+bundle exec rspec
 ```
