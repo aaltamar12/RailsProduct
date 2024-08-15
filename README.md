@@ -81,12 +81,11 @@ EDITOR="code --wait" rails credentials:edit
 5. **Ejecutar el Servidor**
 
    Inicia el servidor Rails:
+    ```ruby
+    rails s -p 3001
+    ```
 
-   ```ruby
-rails s -p 3001
-```
-
-   El servidor se ejecutará en \`http://localhost:3001\`.
+   El servidor se ejecutará en http://localhost:3001\.
 
 ## Uso
 
