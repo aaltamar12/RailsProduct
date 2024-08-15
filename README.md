@@ -109,5 +109,5 @@ Una vez que el servidor está en funcionamiento, puedes acceder a la aplicación
 Para ejecutar las pruebas, usa:
 
 ```ruby
-rails test
+bundle exec rspec
 ```
